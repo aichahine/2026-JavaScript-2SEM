@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8" />
+<title>Cálculo IMC</title>
+
+</head>
+
+<body>
+
+<script>
+  var peso, altura, imc;
+  
+  peso = prompt("Digite o peso");
+  peso = parseFloat(peso).toFixed(2);
+  
+  altura = prompt("Digite a altura");
+  altura = parseFloat(altura).toFixed(2);
+  
+  if (peso == '' || isNaN(peso) ||
+      altura == '' || isNaN(altura)){
+	  alert("Digitar apenas números para o peso e altura");
+	  }
+  else if (peso < 0.01 || altura < 0.01){
+	  alert("Digitar apenas números maiores que zero para o peso e altura");
+	  }	  
+  else {
+      imc = (peso / (altura * altura));
+	  imc = imc.toFixed(1);
+	  
+	  document.write("Peso: " + peso + "<br />");
+	  document.write("Altura: " + altura + "<br />");	  
+	  document.write("<hr>");  
+	  
+      if (imc <=18.5) {
+	     document.write("IMC = "+ imc + " - baixo peso")}
+	  else if (imc >18.5 && imc <= 24.9) {
+	     document.write("IMC = "+ imc + " - peso adequado")}
+	  else if (imc >=25 && imc <= 29.9) {
+	     document.write("IMC = "+ imc + " - sobrepeso")}  
+  	  else if (imc >=30 && imc <= 34.9) {
+	     document.write("IMC = "+ imc + " - obesidade grau I")}
+  	  else if (imc >=35 && imc <= 39.9) {
+	     document.write("IMC = "+ imc + " - obesidade grau II")}
+  	  else {
+	     document.write("IMC = "+ imc + " - obesidade grau III ou obesidade mórbida")};
+  };
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!--30/07 exemplo 4-->
+
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8"/>
+<title>Fatorial</title>
+</head>
+
+<body>
+
+<script>
+	var numero, contador, resultado;
+	numero = prompt("Digite o número desejado");
+	
+	if(numero == '' || isNaN(numero)){
+	alert("Digitar apenas número para o cálculo do fatorial");
+	}
+	else if(numero < 0){
+	alert("Digitar apenas número maior que zero para o cálculo do fatorial");
+	}
+	else{
+	numero = parseInt(numero);
+		resultado = numero;
+		
+		for(contador=(numero-1);contador>0;contador--)
+		{
+			resultado = resultado * contador;
+		};
+		
+		if(resultado = 0)
+		{
+			resultado = 1;
+		}
+		
+		alert("O fatorial de " + numero + " é: " + resultado);
+	};
+
+</script>
+
+</body>
+
+</html>

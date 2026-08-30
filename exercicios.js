@@ -1,0 +1,4 @@
+function validarCalculo()
+{
+    alert("Validado");
+}

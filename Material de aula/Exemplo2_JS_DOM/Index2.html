@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css"
+	      href="Estilo2.css" />
+	<title>Atividade - JavaScript</title>
+    <script type="text/javascript" 
+            src="Funcoes2.js">
+    </script>  	
+</head>
+<body>
+   <h1>Exemplo - uso de DOM</h1>
+
+   <form name="Informacoes" class="fonte18">
+     <br />
+
+     <label id="lbl1" for="idcampo1"
+	        class="negrito italico">Nome:</label>
+     <input type="text" name="campo1" 
+	        id="idcampo1" value='' 
+		    size="35" maxlength="40" 
+		    placeholder="Nome completo (máx.: 40 caracteres)"/>
+     <br /><br />
+
+     <label id="lbl2" for="idcampo2"
+	        class="negrito italico">CPF:</label>
+     <input type="text" name="campo2" 
+	        id="idcampo2" value='' 
+		    size="20" maxlength="12" 
+		    placeholder="CPF com pontos e traço"/>
+     <br /><br />
+
+     <label id="lbl3" for="idcampo3"
+	        class="negrito italico">Data Nascimento:</label>
+     <input type="date" name="campo3" 
+	        id="idcampo3" />
+     <br /><br />
+
+     <label id="lbl4" for="idcampo4"
+	        class="negrito italico">Comentários</label> 
+     <br />   
+     <textarea id="idcampo4" name="campoOBS" 
+	           rows="10" cols="90" wrap="on" 
+		       maxlength="800"/>Digite seu comentário</textarea>   
+     <br /><br />
+
+     <a href="javascript:validaFormulario()">Validar informações</a>
+	 &emsp;
+     <a href="javascript:limpaValidacao()">Limpar mensagem</a>
+     &emsp;
+	 <a href="javascript:mudaLabel1()">Alterar LABEL 1</a>
+	 &emsp;
+	 <a href="javascript:mudaLabel234()">Alterar demais labels</a>
+     <br /> </br />
+	
+     <input type="button" value="Confirmar informações" 
+	        id="bt1" onclick="confirmaForm()"  />
+		  
+	</form>
+    <p id="mensagem"></p> 
+ 
+</body>
+</html>
+
+

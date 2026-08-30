@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Exercício JS</title>
+
+<!-- Javascript interno -->
+<script type="text/javascript">
+    function mensagem(){
+        document.getElementById("corpo").style.backgroundColor="lightblue";
+        document.getElementById("cabec").innerHTML="<u>Novo cabeçalho";
+        document.getElementById("cabec").style.color="red";
+    }
+</script>
+
+<!-- Javascript externo -->
+<script type="text/javascript" scr="Aula_20-08-2026.js"></script>
+<script type="text/javascript" scr="MinhasFuncoes.js"></script>
+
+</head>
+
+<!-- Evento onload só pode ser aplicado na tag body -->
+<body id="corpo" onload="mensagem()">
+<h1 id="cabec" onmouseover="exibeMensagem2()">Exercício javascript (JS)</h1>
+
+<button id="bt1">Primeira função 
+    <script>contagem()</script>
+</button>
+
+<br><br>
+<button id="bt2">Segunda função</button>
+
+<label id="lb1">Digite seu nome</label>
+<input id="txt" type="text"/>
+<br><br>
+<label id="lbl2">Espaço para comentários</label>
+<br>
+<textarea id="txtarea" rows="10"></textarea>
+
+<!-- Javascript em linha -->
+<script language="javascript">mensagem()</script>
+
+<br><br>
+<!-- Javascript com link -->
+<a href="javascript": mensagem()>Javascript com link</a>
+
+</body>
+</html>
+
+<!--
+ACIONAMENTO DE FUNÇÕES
+onclick = selecionar botão esquerdo do mouse
+onfocus = elemento recebe foco
+onblur = elemento perde foco
+onmouseover = colocar mouse sobre o elemento
+onmouseout = retirar mouse do elemento
+onkeyup = seleciona tecla
+onload = ler arquivo
+-->

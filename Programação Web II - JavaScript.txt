@@ -1,0 +1,26 @@
+Programação Web II - JavaScript
+Aula do dia 27 de agosto
+
+JavaScript é case sensitive
+
+<!-- Sintaxe -->
+<!-- Página atual de navegação + neste elemento + entre parênteses o Id + ação -->
+document.getElementById("Id").innerHTML = "conteúdo" <!-- altera o conteúdo do elemento HTML que contém o Id -->
+			     .innerText = "conteúdo" <!-- troca o conteúdo pelo texto; não executa HTML -->
+			     .value = "conteúdo" <!-- quando o usuário consegue alterar o valor -->
+
+-------------------------------------------------------------------------------------
+
+Programação Web II - JavaScript
+Aula do dia 20 de agosto
+Modelo de Documento por Objetos (Document Object Model)
+
+Sintaxe
+document.getElementById('id').innerHTML="conteúdo";
+Aplicado em elementos que o usuário não edita
+
+document.getElementById('id').value;
+Aplicado em elementos que o usuário modifica
+
+document.getElementById('id').style.propriedade="valor";
+Aplicado em elementos para modificar a estilização
